@@ -1,0 +1,25 @@
+[connection]
+id=Home Wifi
+uuid=dd9a753e-2ef4-4332-911b-7ad6bf29c778
+type=wifi
+permissions=
+
+[wifi]
+mac-address=B8:27:EB:52:ED:DD
+mac-address-blacklist=
+mode=infrastructure
+ssid=TALKTALKB94B39
+
+[wifi-security]
+auth-alg=open
+key-mgmt=wpa-psk
+psk=C94NRDVF
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto

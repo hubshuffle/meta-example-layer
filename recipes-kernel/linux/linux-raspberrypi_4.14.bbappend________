@@ -1,0 +1,2 @@
+ 
+KBUILD_DEFCONFIG_raspberrypi3-custom ?= "bcm2709_defconfig"

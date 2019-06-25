@@ -1,0 +1,34 @@
+#@TYPE: Machine
+#@NAME: RaspberryPi 3 Development Board
+#@DESCRIPTION: Machine configuration for the RaspberryPi 3
+
+MACHINEOVERRIDES =. "raspberrypi3:"
+
+# DEFAULTTUNE ?= "cortexa7thf-neon-vfpv4"
+#require conf/machine/include/tune-cortexa7.inc
+#require conf/machine/include/rpi-base.inc
+#
+#MACHINE_EXTRA_RRECOMMENDS += "\
+#    linux-firmware-rpidistro-bcm43430 \
+#    linux-firmware-rpidistro-bcm43455 \
+#    bluez-firmware-rpidistro-bcm43430a1-hcd \
+#    bluez-firmware-rpidistro-bcm4345c0-hcd \
+#"
+# 
+# SDIMG_KERNELIMAGE ?= "kernel7.img"
+# UBOOT_MACHINE = "rpi_3_32b_config"
+# SERIAL_CONSOLES ?= "115200;ttyS0"
+
+ENABLE_UART = "1"
+ENABLE_I2C = "1"
+ENABLE_SPI_BUS = "1"
+GPU_MEM = "16"
+DISABLE_SPLASH = "1"
+DISABLE_RPI_BOOT_LOGO = "1"
+
+# Use u-boot instead of barebox
+RPI_USE_U_BOOT = "1"
+KERNEL_IMAGETYPE = "zImage"
+KERNEL_BOOTCMD = "bootz"
+
+# KBUILD_DEFCONFIG_raspberrypi3-custom ?= "bcm2709_defconfig"
