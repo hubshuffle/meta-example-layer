@@ -56,9 +56,6 @@ IMAGE_INSTALL += "python-flask-hello-world"
 # Add cpp hello world app
 IMAGE_INSTALL += "cpp-hello-world"
 
-# Add transmission app
-IMAGE_INSTALL += "transmission"
-
 # Use Network Manager
 IMAGE_INSTALL += "networkmanager networkmanager-bash-completion networkmanager-nmtui"
 
