@@ -1,4 +1,4 @@
-PACKAGECONFIG_remove = "networkd resolved backlight"
+PACKAGECONFIG_remove = "networkd backlight"
 PACKAGECONFIG_append = " coredump"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
