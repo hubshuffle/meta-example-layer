@@ -10,9 +10,6 @@ EXTRA_USERS_PARAMS = "\
 usermod -p \\\$1\\\$8uiksjhr\\\$dGcSUTCMLX0Tl1Benl3SX. root \
 "
 
-# Customize hostname
-hostname_pn-base-files = "berry"
-
 # Configure timezone
 IMAGE_INSTALL += "tzdata-europe tzdata"
 
