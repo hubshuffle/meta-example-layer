@@ -38,29 +38,15 @@ do_image_complete_append() {
     bb.warn("The image has been freshly baked!")
 }
 
-# Install watchdog
-IMAGE_INSTALL += "watchdog"
-
 # Add support for wifi and bluetooth
 IMAGE_INSTALL += "linux-firmware linux-firmware-bcm43430"
 
 # Add mount.nfs
 IMAGE_INSTALL += "nfs-utils"
 
-# Add our python flask hello world app
-IMAGE_INSTALL += "python-flask-hello-world"
-
-# Add cpp hello world app
-IMAGE_INSTALL += "cpp-hello-world"
-
 # Use Network Manager
 IMAGE_INSTALL += "networkmanager networkmanager-bash-completion networkmanager-nmtui"
 
-# Install i2c-tools
-IMAGE_INSTALL += "i2c-tools"
+# Install kodi
+IMAGE_INSTALL += "kodi omxplayer"
 
-# Install picocom
-IMAGE_INSTALL += "picocom"
-
-# Install cmake hello world 
-IMAGE_INSTALL += "cmake-hello-world"
