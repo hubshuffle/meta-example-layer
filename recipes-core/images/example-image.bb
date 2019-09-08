@@ -33,8 +33,8 @@ IMAGE_FEATURES_remove = "splash"
 IMAGE_FEATURES += "ssh-server-dropbear"
 
 # Add package management
-EXTRA_IMAGE_FEATURES += "package-management"
-PACKAGE_CLASSES = "package_rpm"
+IMAGE_FEATURES += "package-management"
+IMAGE_INSTALL += "opkg"
 
 # Print this message when
 do_image_complete_append() {
