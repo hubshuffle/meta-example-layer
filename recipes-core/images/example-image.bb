@@ -67,3 +67,6 @@ IMAGE_INSTALL += "picocom"
 
 # Install cmake hello world 
 IMAGE_INSTALL += "cmake-hello-world"
+
+# Install qt5 cinematic experience app
+IMAGE_INSTALL += "cinematicexperience"
